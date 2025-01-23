@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "gamingconsoles",
+	"version": "${version}",
+	"name": "Gaming Consoles",
+	"description": "This is a mod that adds some popular working gaming consoles. First addition is Nintendo Switch",
+	"authors": [
+		"Maksiurino!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/gamingconsoles/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.maksiurino.gamingconsoles.GamingConsoles"
+		],
+		"client": [
+			"net.maksiurino.gamingconsoles.GamingConsolesClient"
+		],
+		"fabric-datagen": [
+			"net.maksiurino.gamingconsoles.GamingConsolesDataGenerator"
+		]
+	},
+	"mixins": [
+		"gamingconsoles.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"geckolib": "*"
+	},
+	"suggests": {
+		"entity_model_features": "*"
+	}
+}
